@@ -1,3 +1,7 @@
 .app-text-center {
     text-align: center;
 }
+
+.app-pointer-cursor {
+    cursor: pointer;
+}
