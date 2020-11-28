@@ -7,12 +7,28 @@
 }
 
 #guitar-preview {
-    width: 800px;
-    height: 300px;
-    background-color: black;
+    width: 100%;
+    height: 200px;
+    background-color: gray;
     position: relative;
 }
 
 img {
     position: absolute;
 }
+
+.app-circle {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+#rosewood {
+    background-image: url("./assets/rosewood.jpg");
+}
+
+#maple {
+    background-image: url("./assets/maple.jpg");
+}
+

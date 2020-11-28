@@ -7,3 +7,8 @@ function bodyColor(color) {
   bodyImg.src = "./assets/body-" + color + ".png";
   $('#bodyColorModal').modal('hide');
 }
+
+function fretboardWood(wood) {
+  neckImg.src = "./assets/neck-" + wood + ".png";
+  $('#fretboardWoodModal').modal('hide');
+}
