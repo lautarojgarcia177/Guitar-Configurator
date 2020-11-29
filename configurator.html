@@ -21,70 +21,66 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-sm-3 col-6">
-                <div class="app-configuration-category m-2 w-100" id="general-options">
-                    <h6 class="text-center">General Options</h6>
-                </div>
+            <div class="col-sm-3 col-6" id="general-options">
+                <h6 class="text-center mt-1">General Options</h6>
             </div>
-            <div class="col-sm-3 col-6">
-                <div class="app-configuration-category m-2 w-100" id="body-options">
-                    <h6 class="text-center">Body</h6>
-                    <p class="app-pointer-cursor app-configurator-option" data-toggle="modal" data-target="#bodyColorModal">Color</p>
-                    <div class="modal fade" id="bodyColorModal" tabindex="-1" aria-labelledby="bodyColorModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h6 class="modal-title" id="bodyColorModalLabel">Body color</h6>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="d-flex flex-wrap">
-                                    <div class="border border-secondary app-pointer-cursor m-1 hvr-grow" onclick="bodyColor('lightblue')" style="background-color: lightblue; width: 50px; height: 50px;"></div>
-                                    <div class="border border-secondary app-pointer-cursor m-1 hvr-grow" onclick="bodyColor('black')" style="background-color: black; width: 50px; height: 50px;"></div>
+            <div class="col-sm-3 col-6" id="body-options">
+                    <h6 class="mt-1 text-center">Body</h6>
+                    <div class="ml-2">
+                        <p class="app-pointer-cursor app-configurator-option" data-toggle="modal" data-target="#bodyColorModal">Color</p>
+                        <div class="modal fade" id="bodyColorModal" tabindex="-1" aria-labelledby="bodyColorModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h6 class="modal-title" id="bodyColorModalLabel">Body color</h6>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
                                 </div>
+                                <div class="modal-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="border border-secondary app-pointer-cursor m-1 hvr-grow" onclick="bodyColor('lightblue')" style="background-color: lightblue; width: 50px; height: 50px;"></div>
+                                        <div class="border border-secondary app-pointer-cursor m-1 hvr-grow" onclick="bodyColor('black')" style="background-color: black; width: 50px; height: 50px;"></div>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
-                          </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="col-sm-3 col-6">
-                <div class="app-configuration-category m-2 w-100" id="neck-options">
-                    <h6 class="text-center">Neck</h6>
+            <div class="col-sm-3 col-6" id="neck-options">
+                    <h6 class="text-center mt-1">Neck</h6>
                     <h6 class="text-center">Fretboard</h6>
-                    <p class="app-pointer-cursor app-configurator-option" data-toggle="modal" data-target="#fretboardWoodModal">Wood</p>
-                    <div class="modal fade" id="fretboardWoodModal" tabindex="-1" aria-labelledby="fretboardWoodModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h6 class="modal-title" id="fretboardWoodModalLabel">Freboard Wood</h6>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+                    <div class="ml-2">
+                        <p class="app-pointer-cursor app-configurator-option" data-toggle="modal" data-target="#fretboardWoodModal">Wood</p>
+                        <div class="modal fade" id="fretboardWoodModal" tabindex="-1" aria-labelledby="fretboardWoodModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h6 class="modal-title" id="fretboardWoodModalLabel">Freboard Wood</h6>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-2 app-pointer-cursor d-flex flex-column align-items-center hvr-grow" onclick="fretboardWood('rosewood')">
+                                            <button type="button" id="rosewood" class="app-circle"></button>
+                                            <h6>Rosewood</h6>
+                                        </div>
+                                        <div class="m-2 app-pointer-cursor d-flex flex-column align-items-center  hvr-grow" onclick="fretboardWood('maple')">
+                                            <button type="button" id="maple" class="app-circle"></button>
+                                            <h6>Maple</h6>
+                                        </div>
+                                    </div>                     
+                                </div>
+                              </div>
                             </div>
-                            <div class="modal-body">
-                                <div class="d-flex flex-wrap">
-                                    <div class="m-2 app-pointer-cursor d-flex flex-column align-items-center hvr-grow" onclick="fretboardWood('rosewood')">
-                                        <button type="button" id="rosewood" class="app-circle"></button>
-                                        <h6>Rosewood</h6>
-                                    </div>
-                                    <div class="m-2 app-pointer-cursor d-flex flex-column align-items-center  hvr-grow" onclick="fretboardWood('maple')">
-                                        <button type="button" id="maple" class="app-circle"></button>
-                                        <h6>Maple</h6>
-                                    </div>
-                                </div>                     
-                            </div>
-                          </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="col-sm-3 col-6">
-                <div class="app-configuration-category m-2 w-100" id="components-options">
-                    <h6 class="text-center">Components</h6>
-                </div>
+            <div class="col-sm-3 col-6" id="components-options">
+                <h6 class="text-center mt-1">Components</h6>
             </div>
         </div>
     </div>

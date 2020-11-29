@@ -52,11 +52,13 @@
     font-size: small;
 }
 
-#general-options { border-right: 2px solid gray; }
-#body-options { border-right: 2px solid gray; }
-#neck-options { border-right: 2px solid gray; }
+#general-options { border-right: 2px solid rgba(128, 128, 128, 0.5); }
+#body-options { border-right: 2px solid rgba(128, 128, 128, 0.5); }
+#neck-options { border-right: 2px solid rgba(128, 128, 128, 0.5); }
 
 @media (max-width: 576px) {
-    #general-options { border-bottom: 2px solid gray; }
-    #body-options { border-bottom: 2px solid gray; border-right: none}
+    #general-options { border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 1rem;}
+    #body-options { border-bottom: 2px solid rgba(128, 128, 128, 0.5); border-right: none; padding-bottom: 1rem;}
+    #neck-options { padding-top: 1rem; }
+    #components-options { padding-top: 1rem; }
 }
