@@ -51,3 +51,12 @@
     color: blue;
     font-size: small;
 }
+
+#general-options { border-right: 2px solid gray; }
+#body-options { border-right: 2px solid gray; }
+#neck-options { border-right: 2px solid gray; }
+
+@media (max-width: 576px) {
+    #general-options { border-bottom: 2px solid gray; }
+    #body-options { border-bottom: 2px solid gray; border-right: none}
+}
