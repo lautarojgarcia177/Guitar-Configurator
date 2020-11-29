@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 .app-text-center {
     text-align: center;
 }
@@ -7,14 +11,25 @@
 }
 
 #guitar-preview {
-    width: 100%;
-    height: 200px;
-    background-color: gray;
+    background-image:url('./assets/guitar-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     position: relative;
+
+    width: 100%;
+    height: 100px;
 }
 
-img {
+@media (min-width: 200px) { #guitar-preview { height: 100px; } }
+@media (min-width: 300px) { #guitar-preview { height: 150px; } }
+@media (min-width: 400px) { #guitar-preview { height: 200px; } }
+
+.app-guitar-part {
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .app-circle {
@@ -32,3 +47,7 @@ img {
     background-image: url("./assets/maple.jpg");
 }
 
+.app-configurator-option {
+    color: blue;
+    font-size: small;
+}

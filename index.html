@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <iframe src="./configurator.html" height="800" width="1000"></iframe>
+    <iframe id="configurator" src="./configurator.html"></iframe>
+    <script>
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        document.getElementById('configurator').width = vw - 18;
+        document.getElementById('configurator').height = vh - 22;
+    </script>
 </body>
 </html>
